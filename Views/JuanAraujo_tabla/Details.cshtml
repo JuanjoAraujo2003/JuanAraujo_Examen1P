@@ -1,0 +1,42 @@
+﻿@model JuanAraujo_Examen1P.Models.JuanAraujo_tabla
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>JuanAraujo_tabla</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JaName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JaName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JaTieneCita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JaTieneCita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JaFechaCita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JaFechaCita)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JaValorCita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JaValorCita)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
